@@ -1,0 +1,279 @@
+@import url("https://use.typekit.net/bxt2nob.css");
+
+:root {
+  --tim-passion-red: #AD4421;
+  --tim-neutral-grey: #EFEFEF;
+}
+
+/* reset */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+body,
+html {
+  font-family: neue-haas-unica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.3;
+  background-color: #EFEFEF;
+}
+
+/* serif font */
+.serif-font {
+  font-family: plantin, sans-serif;
+  font-style: italic;
+  font-weight: 300;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 25px 10px 10px 0px;
+    background-color: #EFEFEF;
+    z-index: 3;
+}
+
+.logo {
+  padding-left: 10px;
+  padding-bottom: 0px;
+  font-family: neue-haas-unica, sans-serif;
+  font-size: 50px;
+  line-height: 43px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  transition-duration: .5s;
+}
+
+.thin {
+  font-weight: 200;
+}
+
+.header-main{
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+ 
+.header-main a {
+  margin-left: 10px;
+  font-weight: 100;
+  font-size: 30px;
+}
+
+.header-main a:hover,
+.header-main a:focus{
+  font-style: italic;
+  text-decoration: underline 5px #AD4421;
+}
+
+.over p, .contact p {
+  font-size: 24px;
+  line-height: 1.3;
+  padding-top: 6px;
+  padding: 20px 10px 10px 10px;
+  background-color: #AD4421;
+  color: #EFEFEF;
+}
+
+.wrapper-over {
+  overflow:hidden;
+  width: 80%;
+  line-height:0
+}
+
+ .wrapper-over img {
+  width: 100%;
+  transition: all .5s ease-in-out;
+  display: block;
+}
+
+.email {
+  color: #EFEFEF;
+}
+
+.email:hover {
+  font-style: italic;
+  background-color: none;
+}
+
+.email{
+  text-decoration: underline;
+}
+
+/* CSS FOR JAVASCRIPT IN NAV BAR *******************************************************/
+.logo-compact{
+  font-size: 30px;
+  line-height: 25px;
+  transition-duration: .5s;
+}
+
+.open {
+  transform: translateY(0);
+}
+/********************************************************/
+
+.intro-text {
+  position: absolute;
+  margin: 0px 10px 0px 10px;
+  top: 200px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.red {
+  color: #AD4421;
+}
+
+/* START PHOTOS ON HOME PAGE
+*******************************************************/
+
+.project-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 300px;
+  justify-content: space-between;
+}
+
+.project-item {
+  position: relative;
+  width: 47%;
+  height: 230px;
+  flex-grow: 1;
+  margin: 10px;
+  margin-bottom: 10px;
+}
+
+.wrapper {
+  width: 100%;
+  height: 200px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+ }
+
+.project-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all .5s ease-in-out;
+}
+
+.project-item img:hover,
+.project-item img:focus {
+  transform: scale(1.2);
+}
+
+.project-item h2,
+.project-item h3 {
+  display: inline;
+  margin: auto;
+}
+
+.project-item h2 {
+  font-weight: 500;
+}
+
+.project-item h3 {
+  font-family: plantin, sans-serif;
+  font-style: italic;
+  font-weight: 300;
+}
+
+/*******************************************************
+END CSS PHOTOS ON HOME PAGE*/
+
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 12px;
+}
+
+.footer p {
+  padding: 0 10px 10px 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .small-hidden {
+    display: none;
+  }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .intro-text {
+    font-size: 32px;
+  }
+
+  .project-list{
+    margin-top: 350px;
+  }
+
+  .header-main {
+    position: absolute;
+    top: 43px;
+    left: 500px;
+  }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .project-list{
+    margin-top: 380px;
+  }
+
+  .header-main {
+    position: absolute;
+    top: 43px;
+    left: 700px;
+  }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  
+}
+
+/* For print */
+@media print {
+  *{
+    display: none;
+  }
+}

@@ -1,5 +1,3 @@
-@import url("https://use.typekit.net/bxt2nob.css");
-
 :root {
   --tim-passion-red: #AD4421;
   --tim-neutral-grey: #EFEFEF;
@@ -20,150 +18,95 @@ html {
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
-  line-height: 1.3;
-  background-color: #EFEFEF;
+  line-height: 1.8rem;
+  background-color: var(--tim-neutral-grey);
+  padding: 0 10px 0 10px;
 }
 
-/* serif font */
-.serif-font {
-  font-family: plantin, sans-serif;
-  font-style: italic;
-  font-weight: 300;
+.red {
+  color: var(--tim-passion-red);
 }
 
 header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    padding: 25px 10px 10px 0px;
-    background-color: #EFEFEF;
-    z-index: 3;
+  position: fixed;
+  padding: 20px 10px 10px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--tim-neutral-grey);
+  z-index: 3;
 }
 
-.logo {
-  padding-left: 10px;
-  padding-bottom: 0px;
-  font-family: neue-haas-unica, sans-serif;
-  font-size: 50px;
-  line-height: 43px;
-  font-weight: 500;
-  letter-spacing: -1px;
-  transition-duration: .5s;
-}
-
-.thin {
-  font-weight: 200;
-}
-
-.header-main{
+nav.nav-menu {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 
-a {
-  color: #000;
-  text-decoration: none;
-}
- 
-.header-main a {
-  margin-left: 10px;
-  font-weight: 100;
-  font-size: 30px;
+ul.nav-main {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.header-main a:hover,
-.header-main a:focus{
+ul li {
+  margin-right: 10px;
+}
+
+ul li:last-child {
+  margin-right: 0px;
+}
+
+ul li:hover,
+ul li:focus {
   font-style: italic;
   text-decoration: underline 5px #AD4421;
 }
 
 .over p, .contact p {
-  font-size: 24px;
-  line-height: 1.3;
+  font-size: 1rem;
+  line-height: 1.6rem;
   padding-top: 6px;
   padding: 20px 10px 10px 10px;
-  background-color: #AD4421;
+  background-color: var(--tim-passion-red);
+  color: var(--tim-neutral-grey);
+}
+
+.link {
   color: #EFEFEF;
 }
 
-.wrapper-over {
-  overflow:hidden;
-  width: 80%;
-  line-height:0
-}
-
- .wrapper-over img {
-  width: 100%;
-  transition: all .5s ease-in-out;
-  display: block;
-}
-
-.email {
-  color: #EFEFEF;
-}
-
-.email:hover {
+.link:hover {
   font-style: italic;
   background-color: none;
 }
 
-.email{
+.link{
   text-decoration: underline;
-}
-
-/* CSS FOR JAVASCRIPT IN NAV BAR *******************************************************/
-.logo-compact{
-  font-size: 30px;
-  line-height: 25px;
-  transition-duration: .5s;
-}
-
-.open {
-  transform: translateY(0);
-}
-/********************************************************/
-
-.intro-text {
-  position: absolute;
-  margin: 0px 10px 0px 10px;
-  top: 200px;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.red {
-  color: #AD4421;
 }
 
 /* START PHOTOS ON HOME PAGE
 *******************************************************/
-
-.project-list{
+.project-list {
   display: flex;
-  flex-wrap: wrap;
-  margin-top: 300px;
-  justify-content: space-between;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .project-item {
   position: relative;
-  width: 47%;
-  height: 230px;
-  flex-grow: 1;
-  margin: 10px;
-  margin-bottom: 10px;
 }
 
 .wrapper {
   width: 100%;
-  height: 200px;
   display: block;
   position: relative;
   overflow: hidden;
- }
+}
 
-.project-item img {
+.wrapper img {
   position: absolute;
   top: 0;
   left: 0;
@@ -178,7 +121,7 @@ a {
 
 .project-item h2,
 .project-item h3 {
-  display: inline;
+  display: inline-block;
   margin: auto;
 }
 
@@ -187,81 +130,136 @@ a {
 }
 
 .project-item h3 {
-  font-family: plantin, sans-serif;
+  font-family: Plantin, serif;
   font-style: italic;
   font-weight: 300;
 }
-
-/*******************************************************
-END CSS PHOTOS ON HOME PAGE*/
-
+/* END PHOTOS ON HOME PAGE
+*******************************************************/
 
 .footer {
   display: flex;
   align-items: center;
   justify-content: left;
-  font-size: 12px;
+  font-size: .6rem;
+  margin-bottom: 10px;
 }
 
-.footer p {
-  padding: 0 10px 10px 12px;
+.footer-item {
+  margin-right: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .logo {
+    font-family: neue-haas-unica, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    /* letter-spacing: -1px; */
+    width: 100%;
+    transition-duration: .5s;
+  }
+
+  h1.intro-text {
+    position: absolute;
+    top: 125px;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    font-weight: 400;
+  }
+
+  .project-list {
+    margin-top: 250px;
+  }
+
+  .project-item {
+    width: 100%;
+    height: 230px;
+    margin-bottom: 20px;
+  }
+
+  .wrapper {
+    height: 200px;
+  }
+
   .small-hidden {
     display: none;
   }
 }
 
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  
-}
+  .logo {
+    font-weight: 500;
+    transition: all .5s ease-in-out;
+  }
 
+  h1.intro-text {
+    position: absolute;
+    top: 100px;
+    width: 65%;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    font-weight: 400;
+  }
+
+  nav.nav-menu {
+    justify-content: space-between;
+  }
+
+  ul li{
+    margin-right: 20px;
+  }
+
+  ul li:last-child{
+    margin-right: 30px;
+  }
+
+  .project-list {
+    margin-top: 250px;
+  }
+
+  .project-item {
+    width: 100%;
+    height: 330px;
+    margin-bottom: 20px;
+  }
+
+  .wrapper {
+    height: 300px;
+  }
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .intro-text {
-    font-size: 32px;
+  header {
+    padding: 20px 10px 10px 20px;
   }
 
-  .project-list{
-    margin-top: 350px;
+  .project-item {
+    width: 48%;
+    height: 230px;
+    margin-bottom: 20px;
+    margin-right: 10px;
   }
 
-  .header-main {
-    position: absolute;
-    top: 43px;
-    left: 500px;
+  .wrapper {
+    height: 200px;
   }
 }
 
-
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .project-list{
-    margin-top: 380px;
+  .project-item {
+    width: 48%;
+    height: 330px;
+    margin-bottom: 20px;
+    margin-right: 10px;
   }
 
-  .header-main {
-    position: absolute;
-    top: 43px;
-    left: 700px;
+  .wrapper {
+    height: 300px;
   }
 }
 
@@ -270,6 +268,39 @@ END CSS PHOTOS ON HOME PAGE*/
 @media only screen and (min-width: 1200px) {
   
 }
+
+
+/* CSS FOR JAVASCRIPT IN NAV BAR *******************************************************/
+.logo-compact{
+  font-size: 1.2rem;
+  line-height: 25px;
+  transition-duration: .5s;
+}
+
+.open {
+  transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* For print */
 @media print {

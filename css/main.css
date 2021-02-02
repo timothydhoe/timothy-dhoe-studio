@@ -20,7 +20,6 @@ html {
   font-size: 18px;
   line-height: 1.8rem;
   background-color: var(--tim-neutral-grey);
-  padding: 0 10px 0 10px;
 }
 
 .red {
@@ -29,12 +28,20 @@ html {
 
 header {
   position: fixed;
-  padding: 20px 10px 10px;
+  padding: 1em .5em;
   width: 100%;
   top: 0;
   left: 0;
   background-color: var(--tim-neutral-grey);
   z-index: 3;
+}
+
+.logo {
+  font-family: neue-haas-unica, sans-serif;
+  font-size: 1.4em;
+  font-weight: 500;
+  width: 100%;
+  transition-duration: .5s;
 }
 
 nav.nav-menu {
@@ -50,31 +57,48 @@ ul.nav-main {
   align-items: center;
 }
 
-ul li {
-  margin-right: 10px;
+nav ul li {
+  margin-right: 1em;
+  font-size: 1.2em;
 }
 
-ul li:last-child {
-  margin-right: 0px;
+nav ul li:last-child {
+  margin-right: 0;
 }
 
-ul li:hover,
-ul li:focus {
+nav ul li:hover,
+nav ul li:focus {
   font-style: italic;
-  text-decoration: underline 5px #AD4421;
+  text-decoration: underline .2em #AD4421;
 }
 
 .over p, .contact p {
-  font-size: 1rem;
-  line-height: 1.6rem;
+  font-size: 1em;
+  line-height: 1.6em;
   padding-top: 6px;
-  padding: 20px 10px 10px 10px;
+  padding: 1em 1.2em;
   background-color: var(--tim-passion-red);
   color: var(--tim-neutral-grey);
+  overflow: scroll;
+}
+
+.profile-wrapper {
+  object-fit: cover;
+  width: 100%;
+  height: 10em;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--tim-passion-red);
+}
+
+.wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .link {
-  color: #EFEFEF;
+  color: var(--tim-neutral-grey);
 }
 
 .link:hover {
@@ -86,42 +110,53 @@ ul li:focus {
   text-decoration: underline;
 }
 
+.intro {
+  position: absolute;
+  width: 100%;
+  padding: 0 .5rem;
+  font-size: 1.5em;
+  line-height: 1.4em;
+}
+
 /* START PHOTOS ON HOME PAGE
 *******************************************************/
 .project-list {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 10px;
+  padding: 0 1em;
+  margin-top: 18rem;
 }
 
 .project-item {
-  position: relative;
+  grid-column: auto / span 2;
+  justify-self: stretch;
+  margin-bottom: 1em;
 }
 
 .wrapper {
+  object-fit: cover;
   width: 100%;
+  height: 12em;
   display: block;
   position: relative;
   overflow: hidden;
 }
 
 .wrapper img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  object-fit: cover;
   transition: all .5s ease-in-out;
 }
 
 .project-item img:hover,
 .project-item img:focus {
-  transform: scale(1.2);
+  opacity: .85;
 }
 
 .project-item h2,
 .project-item h3 {
-  display: inline-block;
+  display: inline;
   margin: auto;
 }
 
@@ -130,7 +165,7 @@ ul li:focus {
 }
 
 .project-item h3 {
-  font-family: Plantin, serif;
+  font-family: plantin, serif;
   font-style: italic;
   font-weight: 300;
 }
@@ -142,45 +177,68 @@ ul li:focus {
   align-items: center;
   justify-content: left;
   font-size: .6rem;
-  margin-bottom: 10px;
+  padding: 0px 10px 10px 10px;
 }
 
 .footer-item {
   margin-right: 20px;
 }
 
+/* MEDIA QUERIES */
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .logo {
-    font-family: neue-haas-unica, sans-serif;
-    font-size: 1.4rem;
-    font-weight: 500;
-    /* letter-spacing: -1px; */
-    width: 100%;
-    transition-duration: .5s;
+/* Extra small phone viewpoints (phones, 320px - 400px) */
+@media only screen and (min-width: 320px) {
+  body {
+    padding: .5rem;
   }
 
-  h1.intro-text {
-    position: absolute;
-    top: 125px;
-    font-size: 1.3rem;
-    line-height: 1.6rem;
-    font-weight: 400;
+  header{
+    padding: .5rem 1.4rem;
+  }
+
+  .intro {
+    font-size: 1.2em;
+    top: 5em;
+    padding: 0 1rem;
+    width: 95%;
   }
 
   .project-list {
-    margin-top: 250px;
-  }
-
-  .project-item {
-    width: 100%;
-    height: 230px;
-    margin-bottom: 20px;
+    margin-top: 14em;
   }
 
   .wrapper {
-    height: 200px;
+    height: 8em;
+  }
+
+  .small-hidden {
+    display: none;
+  }
+}
+
+/* Extra small devices (phones, 400px - 600) */
+@media only screen and (min-width: 400px) {
+  body {
+    padding: .5rem;
+  }
+
+  header{
+    padding: .5rem 1.4rem;
+  }
+
+  .intro {
+    font-size: 1.5em;
+    top: 6rem;
+    padding: 0 1rem;
+    width: 95%;
+  }
+
+  .project-list {
+    margin-top: 16em;
+  }
+
+  .wrapper {
+    height: 10em;
   }
 
   .small-hidden {
@@ -190,87 +248,130 @@ ul li:focus {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .logo {
-    font-weight: 500;
-    transition: all .5s ease-in-out;
+  body {
+    padding: 1rem;
   }
 
-  h1.intro-text {
-    position: absolute;
-    top: 100px;
-    width: 65%;
-    font-size: 1.3rem;
-    line-height: 1.6rem;
-    font-weight: 400;
+  header{
+    padding: 1rem 2rem;
   }
 
-  nav.nav-menu {
+  .intro {
+    font-size: 2em;
+    padding: 0 1rem;
+    width: 95%;
+  }
+
+   nav.nav-menu {
     justify-content: space-between;
   }
 
-  ul li{
+  nav ul li{
     margin-right: 20px;
   }
 
-  ul li:last-child{
+  nav ul li:last-child{
     margin-right: 30px;
   }
 
   .project-list {
-    margin-top: 250px;
+    margin-top: 18em;
   }
-
-  .project-item {
-    width: 100%;
-    height: 330px;
-    margin-bottom: 20px;
-  }
-
+  
   .wrapper {
-    height: 300px;
+    height: 15em;
+    object-fit: cover;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  header {
-    padding: 20px 10px 10px 20px;
+  body {
+    padding: 2rem;
   }
 
-  .project-item {
-    width: 48%;
-    height: 230px;
-    margin-bottom: 20px;
-    margin-right: 10px;
+  header{
+    padding: 1rem 3rem;
   }
 
+  .intro {
+    font-size: 2em;
+    margin-top: 1em;
+    padding: 0 1rem;
+    width: 75%;
+  }
+
+   nav.nav-menu {
+    justify-content: space-between;
+  }
+
+  nav ul li{
+    margin-right: 20px;
+  }
+
+  nav ul li:last-child{
+    margin-right: 30px;
+  }
+
+  .project-list {
+    margin-top: 20em;
+  }
+  
   .wrapper {
-    height: 200px;
+    height: 15em;
+    object-fit: cover;
   }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .project-item {
-    width: 48%;
-    height: 330px;
-    margin-bottom: 20px;
-    margin-right: 10px;
+  body {
+    padding: 2rem;
   }
 
+  header{
+    padding: 1rem 3rem;
+  }
+
+  .intro {
+    font-size: 2em;
+    margin-top: 1em;
+    padding: 0 1rem;
+    width: 75%;
+  }
+
+   nav.nav-menu {
+    justify-content: space-between;
+  }
+
+  nav ul li{
+    margin-right: 20px;
+  }
+
+  nav ul li:last-child{
+    margin-right: 30px;
+  }
+
+  .project-list {
+    margin-top: 16em;
+  }
+
+  .project-item {
+    grid-column: auto / span 1;
+  }
+  
   .wrapper {
-    height: 300px;
+    height: 15em;
+    object-fit: cover;
   }
 }
-
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  
+
 }
 
-
-/* CSS FOR JAVASCRIPT IN NAV BAR *******************************************************/
+/* START CSS FOR JAVASCRIPT IN NAV BAR *******************************************************/
 .logo-compact{
   font-size: 1.2rem;
   line-height: 25px;
@@ -281,26 +382,7 @@ ul li:focus {
   transform: translateY(0);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* END CSS FOR JAVASCRIPT IN NAV BAR *******************************************************/
 
 /* For print */
 @media print {

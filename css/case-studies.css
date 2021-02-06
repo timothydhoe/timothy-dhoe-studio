@@ -3,6 +3,42 @@
   color: var(--tim-passion-red);
 }
 
-.hero-img {
+.hero-img,
+.full-img {
+  grid-column: 1 / span 4;
+}
+
+.intro-text {
+  margin-bottom: 2em;
+}
+
+.brand-name {
+  font-size: 3em;
+  padding: 0;
+}
+
+.job-description,
+.subtitle {
+  font-family: warnock-pro-subhead, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.job-description {
+  font-size: 2em;
+  margin-left: 3em;
+}
+
+.body-text {
   grid-column: 1 / span 2;
+  margin: 1em 0;
+}
+
+.subtitle {
+  font-size: 2em;
+}
+
+.paragraph {
+  font-size: 1em;
+  line-height: 1.4em;
 }

@@ -39,9 +39,14 @@ h3 {
   font-style: italic;
 }
 
+p,
+.content {
+  margin-bottom: .5em;
+}
+
 header a,
 nav ul li {
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 .red {
@@ -57,7 +62,7 @@ a.red:focus {
   max-width: 960px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat (6, 1fr);
   gap: 10px;
 }
 
@@ -76,7 +81,7 @@ ul li:last-child {
 
 .over,
 .contact {
-  grid-column: 1 / span 4;
+  grid-column: 1 / span 6;
   padding: 1em 1.2em;
   color: var(--tim-neutral-grey);
   background-color: var(--tim-passion-red);
@@ -94,15 +99,27 @@ p .link {
   color: var(--tim-neutral-grey);
 }
 
+.what-we-do {
+  font-size: 1.6em;
+  margin: .8em 0 .5em 0;
+}
+
 article li {
   list-style-type: none;
+}
+
+img.project-img {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  object-fit: cover;
 }
 
 .main-footer {
   display: flex;
   justify-content: space-between;
   font-size: .8em;
-  grid-column: span 4;
+  grid-column: span 6;
 }
 
 .small-hidden{
@@ -111,37 +128,35 @@ article li {
 
 /* smallest devices. eg phones*/
 @media (min-width: 300px) {
-  /* .page-wrapper {
-    grid-template-columns: repeat(4, 1fr);
-  } */
   h1 {
     font-size: 1.2em;
     line-height: 1.4em;
-    padding-bottom: 1em;
+    margin: 1em 0;
     width: 90%;
   }
   .main-head,
   .main-nav,
   .intro-text,
   .content {
-    grid-column: 1 / span 4;
+    grid-column: 1 / span 6;
   }
   .main-head,
   .main-nav{
-    border-bottom: 1px solid;
-    padding-top: .5em;
+    border-bottom: 2px solid;
+    padding-bottom: .5em;
   }
   .main-head {
     position: sticky;
     top: 0;
+    padding-top: .5em;
     background: var(--tim-neutral-grey);
   }
   .small-hidden {
-    grid-column: 1 / span 4;
+    grid-column: 1 / span 6;
   }
 }
 
-/* breakpoint for profile picture */
+/* breakpoint for images */
 @media (min-width: 570px) {
   .over {
     display: flex;
@@ -153,31 +168,28 @@ article li {
      padding-right: 1em;
      margin-bottom: 1em;
     }
-    .over p {
+    .over p:first-of-type {
       width: 50%;
     }
-    .over p:last-of-type{
-      width: 100%;
+    img.project-img {
+      height: 300px;
     }
 }
 
 /* medium and large devices. eg tablets, laptops and desktops */
 @media (min-width: 768px) {
   .page-wrapper {
-    /* grid-template-columns: repeat(4, 1fr); */
     padding: 0 2em;
   }
-  header a,
-nav ul li {
-  font-size: 1.2em;
-}
   h1 {
+    margin: 0;
     padding-top: 2em;
     font-size: 1.6em;
     width: 75%;
   }
   .main-head,
   .main-nav{
+  margin-top: 1em;
   border-bottom: 0;
   }
   .main-head {
@@ -186,25 +198,28 @@ nav ul li {
     background-color: transparent;
   }
   .main-nav {
-    grid-column: 4 / span 1;
+    padding-top: .5em;
+    grid-column: 4 / span 3;
   }
   ul {
     justify-content: flex-end;
   }
   .over,
   .contact {
-  grid-column: 1 / span 4;
-  font-size: 1.4em;
-  line-height: 1.5em;
+  grid-column: 1 / span 6;
+  font-size: 1.2em;
+  line-height: 1.4em;
   }
-  .content {
-    grid-column: span 2;
+ .content {
+    grid-column: span 3;
+  }
+  img.project-img {
+    height: 250px;
   }
   .main-footer{
-    grid-column: span 4;
+    grid-column: span 6;
   }
   .small-hidden {
-    grid-column: 1 / span 4;
     display: inline;
   }
 }
@@ -214,7 +229,7 @@ nav ul li {
   font-size: 1.2rem;
   line-height: 25px;
   transition-duration: .5s;
-}
+} /* stopped working when stickied the logotype */
 
 .open {
   transform: translateY(0);

@@ -4,4 +4,4 @@ Example: we can have many pages and all pages have the navbar as a common compon
 $(.nav_container).load(./components/navbar.html);
 
 
-each page will have an empty div with a class or id ‘nav_container’ and with the above code we will load the navbar.html in the div, the benefit of this, let us assume we have 15 pages and if you have to change any link in the navbar so there is no need to go in every page and change, you have to change in only navbar.html page and the work is done. But this thing only works when you run the project on a server and for that, we have Live Server for VSCode which creates a local server or you can use any other method to create a local server.
+each page will have an empty div with a class or id ‘nav_container’ and with the above code we will load the navbar.html in the div. The benefit of this, let us assume we have 15 pages and if you have to change any link in the navbar so there is no need to go in every page and change, you have to change in only navbar.html page and the work is done.

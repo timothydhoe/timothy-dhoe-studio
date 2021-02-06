@@ -34,9 +34,9 @@ h3 {
 }
 
 h3 {
-  font-family: plantin, serif;
+  font-family: warnock-pro-subhead, sans-serif;
+  font-weight: 400;
   font-style: italic;
-  font-weight: 300;
 }
 
 header a,
@@ -48,11 +48,16 @@ nav ul li {
   color: var(--tim-passion-red);
 }
 
+a.red:hover,
+a.red:focus {
+  text-decoration: underline;
+}
+
 .page-wrapper {
   max-width: 960px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
 }
 
@@ -71,7 +76,7 @@ ul li:last-child {
 
 .over,
 .contact {
-  grid-column: 1 / span 2;
+  grid-column: 1 / span 4;
   padding: 1em 1.2em;
   color: var(--tim-neutral-grey);
   background-color: var(--tim-passion-red);
@@ -89,10 +94,6 @@ p .link {
   color: var(--tim-neutral-grey);
 }
 
-.content {
-  margin-top: 1em;
-}
-
 article li {
   list-style-type: none;
 }
@@ -101,18 +102,21 @@ article li {
   display: flex;
   justify-content: space-between;
   font-size: .8em;
+  grid-column: span 4;
 }
 
 .small-hidden{
   display: none;
 }
 
-@media (min-width: 400px) {
-  .page-wrapper {
-    grid-template-columns: repeat(2, 1fr);
-  }
+/* smallest devices. eg phones*/
+@media (min-width: 300px) {
+  /* .page-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  } */
   h1 {
     font-size: 1.2em;
+    line-height: 1.4em;
     padding-bottom: 1em;
     width: 90%;
   }
@@ -120,16 +124,48 @@ article li {
   .main-nav,
   .intro-text,
   .content {
-    grid-column: 1 / span 2;
+    grid-column: 1 / span 4;
+  }
+  .main-head,
+  .main-nav{
+    border-bottom: 1px solid;
+    padding-top: .5em;
+  }
+  .main-head {
+    position: sticky;
+    top: 0;
+    background: var(--tim-neutral-grey);
   }
   .small-hidden {
-    grid-column: 1 / span 2;
+    grid-column: 1 / span 4;
   }
 }
 
-@media (min-width: 600px) {
+/* breakpoint for profile picture */
+@media (min-width: 570px) {
+  .over {
+    display: flex;
+    flex-wrap: wrap;
+    }
+    .profile-wrapper {
+     order: -1;
+     width: 45%;
+     padding-right: 1em;
+     margin-bottom: 1em;
+    }
+    .over p {
+      width: 50%;
+    }
+    .over p:last-of-type{
+      width: 100%;
+    }
+}
+
+/* medium and large devices. eg tablets, laptops and desktops */
+@media (min-width: 768px) {
   .page-wrapper {
-    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(4, 1fr); */
+    padding: 0 2em;
   }
   header a,
 nav ul li {
@@ -138,89 +174,38 @@ nav ul li {
   h1 {
     padding-top: 2em;
     font-size: 1.6em;
-    line-height: 1.7em;
     width: 75%;
   }
+  .main-head,
+  .main-nav{
+  border-bottom: 0;
+  }
   .main-head {
-  position: sticky;
-  top: 1em;
-}
-  .main-head {
-    grid-column: 1 / span 1;
+    grid-column: 1 / span 3;
+    top: 1em;
+    background-color: transparent;
   }
   .main-nav {
-    grid-column: 2 / span 1;
+    grid-column: 4 / span 1;
   }
   ul {
     justify-content: flex-end;
   }
   .over,
   .contact {
-  grid-column: 2 / span 1;
-  padding: 1em 1.2em;
-  color: var(--tim-neutral-grey);
-  background-color: var(--tim-passion-red);
-}
-  .content{
-    grid-column: span 1;
+  grid-column: 1 / span 4;
+  font-size: 1.4em;
+  line-height: 1.5em;
+  }
+  .content {
+    grid-column: span 2;
   }
   .main-footer{
-    grid-column: span 2;
+    grid-column: span 4;
   }
   .small-hidden {
-    grid-column: 1 / span 2;
+    grid-column: 1 / span 4;
     display: inline;
-  }
-}
-
-@media (min-width: 900px) {
-  .page-wrapper {
-    grid-template-columns: repeat(2, 1fr);
-   }
-   h1 {
-    padding-top: 2em;
-    font-size: 1.6em;
-    line-height: 1.7em;
-    width: 60%;
-  }
-   .main-head {
-    grid-column: 1 / span 1;
-  }
-  .main-nav {
-    grid-column: 2 / span 1;
-  }
-  ul li{
-    justify-content: flex-end;
-  }
-  .intro-text {
-    grid-column: 1 / span 2;
-  }
-  .content{
-    grid-column: span 1;
-  }
-  .main-footer{
-    grid-column: span 2;
-  }
-}
-
-@media (min-width: 1200px) {
-  .page-wrapper {
-    grid-template-columns: repeat(3, 1fr);
-   }
-   .main-head {
-    grid-column: 1 / span 2;
-  }
-  .main-nav {
-    grid-column: 3 / span 1;
-  }
-  .intro-text {
-    grid-column: 1 / span 3;
-  }
-  .content{
-    grid-column: span 1;
-  }
-  .main-footer{
-    grid-column: span 3;
   }
 }
 

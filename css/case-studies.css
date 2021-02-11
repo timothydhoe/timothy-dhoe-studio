@@ -3,19 +3,13 @@
   color: var(--tim-passion-red);
 }
 
-.hero-img,
-.full-img {
-  grid-column: 1 / span 4;
-}
-
-.intro-text {
-  margin-bottom: 2em;
-}
-
-.brand-name {
+h1.brand-name {
+  display: inline-block;
+  padding-bottom: .3em;
+  margin-bottom: 0;
+  line-height: 1.3em;
   font-size: 3em;
-  padding: 0;
-}
+} 
 
 .job-description,
 .subtitle {
@@ -25,8 +19,17 @@
 }
 
 .job-description {
-  font-size: 2em;
+  font-size: 1.6em;
   margin-left: 3em;
+}
+
+.hero-img,
+.full-img {
+  grid-column: 1 / span 6;
+}
+
+.intro-text {
+  margin-bottom: 2em;
 }
 
 .body-text {

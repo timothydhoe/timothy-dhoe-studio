@@ -24,6 +24,24 @@ html {
   scroll-behavior: smooth;
 }
 
+/*
+  Dark mode | comment out to see dark mode
+*/
+
+/* html,
+body,
+a {
+  background-color: rgb(30, 30, 30);
+  color: var(--tim-neutral-grey);
+}
+.main-head a {
+  background-color: transparent;
+} */
+
+/*
+  Not sure of dark mode yet
+*/
+
 h1 {
   padding-bottom: 1em;
 }
@@ -96,6 +114,7 @@ ul li:focus {
 p .link {
   text-decoration: underline;
   color: var(--tim-neutral-grey);
+  background-color: transparent;
 }
 
 .profile-pic {
@@ -157,6 +176,7 @@ img.project-img {
     top: 0;
     padding-top: .5em;
     background: var(--tim-neutral-grey);
+    /* background-color: rgb(30, 30, 30); */ /* for dark mode */
   }
   .small-hidden {
     grid-column: 1 / span 6;

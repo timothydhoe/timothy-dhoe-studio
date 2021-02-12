@@ -40,7 +40,7 @@ h3,
   margin-top: .5em;
   font-family: neue neue-haas-unica, sans-serif;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1em;
 }
 
@@ -58,6 +58,14 @@ h3.subtitle {
 video.mobile {
   grid-column: span 6;
 }
+
+@media (min-width: 570px) {
+    .profile-pic {
+     order: -1;
+     width: 50%;
+     padding-right: 1em;
+     margin-bottom: 1em;
+    }
 
 /* medium and large devices. eg tablets, laptops and desktops */
 @media (min-width: 768px) {

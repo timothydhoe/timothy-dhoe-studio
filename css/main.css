@@ -25,7 +25,7 @@ html {
 }
 
 /*
-  Dark mode | comment out to see dark mode
+  Dark mode | comment code out to see dark mode
 */
 
 /* html,
@@ -37,10 +37,6 @@ a {
 .main-head a {
   background-color: transparent;
 } */
-
-/*
-  Not sure of dark mode yet
-*/
 
 h1 {
   padding-bottom: 1em;
@@ -190,6 +186,7 @@ img.project-img {
     flex-wrap: wrap;
     }
     .profile-pic {
+      display: inline;
      order: -1;
      width: 50%;
      padding-right: 1em;

@@ -76,7 +76,7 @@ a.red:focus {
   max-width: 960px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat (6, 1fr);
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 10px;
 }
 
@@ -137,6 +137,10 @@ img.project-img {
   height: 250px;
   overflow: hidden;
   object-fit: cover;
+}
+
+img.project-img:hover {
+  opacity: 90%;
 }
 
 .main-footer {
@@ -255,12 +259,11 @@ img.project-img {
   font-size: 1.2rem;
   line-height: 25px;
   transition-duration: .5s;
-} /* stopped working when stickied the logotype */
+}
 
 .open {
   transform: translateY(0);
 }
-
 /* END CSS FOR JAVASCRIPT IN NAV BAR *******************************************************/
 
 /* For print */

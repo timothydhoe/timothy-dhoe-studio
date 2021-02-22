@@ -45,9 +45,10 @@ h3,
 }
 
 h3.subtitle {
-  font-size: 1.4em;
+  font-size: 1.1em;
   line-height: 1.4;
   text-transform: uppercase;
+  color: var(--tim-passion-red);
 }
 
 .body-text{
@@ -66,6 +67,7 @@ video.mobile {
      padding-right: 1em;
      margin-bottom: 1em;
     }
+}
 
 /* medium and large devices. eg tablets, laptops and desktops */
 @media (min-width: 768px) {

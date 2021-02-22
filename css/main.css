@@ -121,8 +121,10 @@ p .link {
 }
 
 h2.what-we-do {
-  display: block;
-  font-size: 1.6em;
+
+  font-size: 1em;
+  /* text-transform: uppercase; */
+  font-variant: small-caps;
   margin: 1.2em 0 .5em 0;
 }
 

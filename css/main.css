@@ -87,6 +87,7 @@ ul {
 
 ul li {
   margin-right: 1em;
+  border-bottom: 3px transparent solid;
 }
 
 ul li:last-child {

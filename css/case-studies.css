@@ -60,6 +60,10 @@ h3.subtitle {
   display: inline-block;
 }
 
+figcaption {
+  text-align: center;
+}
+
 video {
   grid-column: span 6;
 }

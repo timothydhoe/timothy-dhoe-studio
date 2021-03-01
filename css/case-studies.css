@@ -55,6 +55,11 @@ h3.subtitle {
   margin: 1em 0;
 }
 
+.logo-wrapper {
+  grid-column: 1 / span 6;
+  display: inline-block;
+}
+
 video.mobile {
   grid-column: span 6;
 }
@@ -82,6 +87,10 @@ video.mobile {
   }
   .body-text {
     grid-column: 1 / span 5;
+  }
+  .logo-wrapper {
+    grid-column: span 3;
+    width: 100%;
   }
   video.mobile {
     grid-column: span 2;

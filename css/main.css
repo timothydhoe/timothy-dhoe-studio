@@ -73,7 +73,7 @@ a.red:focus {
 }
 
 .page-wrapper {
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -246,7 +246,7 @@ img.project-img:hover {
     grid-column: span 3;
   }
   img.project-img {
-    height: 250px;
+    height: 350px;
   }
   .main-footer{
     grid-column: span 6;

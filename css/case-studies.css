@@ -2,6 +2,38 @@
   color: var(--tim-passion-red);
 }
 
+.masthead {
+  grid-column: span 6;
+}
+
+.masthead-headline {
+  margin-top: .5em;
+  margin-bottom: .5em;
+  line-height: 1em;
+  font-size: 4em;
+  font-weight: 700;
+}
+
+.masthead-info {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 3em;
+  font-size: 1.2em;
+}
+
+.masthead-info li:hover {
+  border-bottom: none;
+  font-style: normal;
+}
+
+.masthead-info li:last-of-type {
+  margin-left: 2em;
+}
+
+strong {
+  font-weight: 600;
+}
+
 .banner-img,
 .full-img {
   grid-column: 1 / span 6;
@@ -20,8 +52,9 @@ h2 {
 
 h1.brand-name {
   margin-top: .5em;
-  line-height: 1.3em;
-  font-size: 3em;
+  line-height: 1em;
+  font-size: 4em;
+  font-weight: 700;
 } 
 
 h2.project-description {
@@ -79,15 +112,21 @@ video {
 
 /* medium and large devices. eg tablets, laptops and desktops */
 @media (min-width: 768px) {
+  .masthead {
+    margin-top: 2em;
+  }
   h2.project-description {
     font-size: 1.4em;
+  }
+  .masthead-info li:last-of-type {
+    margin-left: 8em;
   }
   .subtitle {
     font-size: 2em;
   }
   .paragraph {
-    font-size: 1.5em;
-    line-height: 1.6em;
+    font-size: 1.3em;
+    line-height: 1.5em;
   }
   .body-text {
     grid-column: 1 / span 5;

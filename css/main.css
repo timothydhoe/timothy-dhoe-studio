@@ -1,5 +1,6 @@
 :root {
   --tim-passion-red: #AD4421;
+  --tim-inky-black: #1e1e1e;
   --tim-neutral-grey: #EFEFEF;
 }
 
@@ -31,7 +32,7 @@ html {
 html,
 body,
 a {
-  background-color: rgb(30, 30, 30);
+  background-color: var(--tim-inky-black);
   color: var(--tim-neutral-grey);
 }
 .main-head a {

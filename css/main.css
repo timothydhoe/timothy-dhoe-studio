@@ -256,6 +256,7 @@ img.project-img:hover {
   }
   .main-footer{
     grid-column: span 6;
+    margin-top: 2em;
   }
   .small-hidden {
     display: inline;

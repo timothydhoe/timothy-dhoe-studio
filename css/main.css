@@ -180,13 +180,21 @@ img.project-img:hover {
     border-bottom: 2px solid;
     padding-bottom: .5em;
   }
-  .main-head {
+  .main-head{
     position: sticky;
-    z-index: 3;
     top: 0;
     padding-top: .5em;
+    z-index: 3;
     background: var(--tim-neutral-grey);
     background-color: rgb(30, 30, 30); /* for dark mode */
+  }
+  .line {
+    position: sticky;
+    top: 4em;
+    z-index: 2;
+    border-bottom: 3px solid;
+    border-color: var(--tim-neutral-grey);
+    grid-column: 1 / span 6;
   }
   .small-hidden {
     grid-column: 1 / span 6;

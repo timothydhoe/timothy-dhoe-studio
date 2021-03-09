@@ -21,27 +21,17 @@ html {
   font-size: 18px;
   line-height: 1.6em;
   padding: .5rem;
-  background-color: var(--tim-neutral-grey);
+  background-color: var(--tim-inky-black);
+  color: var(--tim-neutral-grey);
   scroll-behavior: smooth;
 }
 
-/*
-  Dark mode | comment code out to see dark mode
-*/
-
-html,
-body,
 a {
-  background-color: var(--tim-inky-black);
   color: var(--tim-neutral-grey);
 }
 .main-head a {
   background-color: transparent;
 }
-
-/*
-  Dark mode | comment code out to see dark mode
-*/
 
 h1 {
   padding-bottom: 1em;
@@ -127,9 +117,7 @@ p .link {
 }
 
 h2.what-we-do {
-
-  font-size: 1em;
-  /* text-transform: uppercase; */
+  font-size: .8em;
   font-variant: small-caps;
   margin: 1.2em 0 .5em 0;
 }
@@ -232,6 +220,10 @@ img.project-img:hover {
     padding-top: 2em;
     font-size: 1.6em;
   }
+  h2.what-we-do {
+    font-size: .6em;
+  }
+  
   .main-head,
   .main-nav{
   margin-top: 1em;

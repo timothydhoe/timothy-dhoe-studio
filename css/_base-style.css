@@ -15,7 +15,7 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font-family: neue-haas-unica, sans-serif;
+  font-family: 'neue-machina-regular', Helvetica, sans-serif;
   font-weight: 400;
   vertical-align: baseline;
 }
@@ -28,7 +28,7 @@ body {
   line-height: 1;
 }
 a {
-  color: #000;
+  color: #A57D01;
   text-decoration: none;
 }
 ol, ul {
@@ -62,4 +62,25 @@ input, textarea, select {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+}
+
+h1::-moz-selection,
+h2::-moz-selection,
+h3::-moz-selection,
+a::-moz-selection,
+li::-moz-selection,
+span::-moz-selection,
+figcaption::-moz-selection,
+p::-moz-selection {
+  color: #021FA6;
+}
+h1::selection,
+h2::selection,
+h3::selection,
+a::selection,
+li::selection,
+span::selection,
+figcaption::selection,
+p::selection {
+  color: #021FA6;
 }

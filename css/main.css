@@ -1,7 +1,7 @@
 :root {
-  --tim-passion-red: #AD4421;
+  --tim-golden-yellow: #A57D01;
   --tim-inky-black: #1e1e1e;
-  --tim-neutral-grey: #EFEFEF;
+  --tim-neutral-grey: #FEFDF9;
 }
 
 /* reset */
@@ -9,284 +9,469 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-size: 100%;
+  font-size: 16px;
   vertical-align: baseline;
 }
 
 body,
 html {
-  font-family: neue-haas-unica, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 18px;
-  line-height: 1.6em;
-  padding: .5rem;
-  background-color: var(--tim-inky-black);
-  color: var(--tim-neutral-grey);
+  cursor: url("../favicon/TDS-favicon-32x32.svg"), auto;
+  font-family: 'neue-machina-regular', sans-serif;
+  font-size: 24px;
+  line-height: 1rem;
+  background-color: var(--tim-neutral-grey);
+  color: var(--tim-golden-yellow);
   scroll-behavior: smooth;
 }
 
-a {
+body {
+  max-width: 1900px;
+}
+
+img {
+  object-fit: cover;
+}
+
+/********************
+  start header and navbar
+********************/
+div.hero-img {
+  height: 75vh;
+  background-image: url("../img/768w/TDS-wegkapitein-main-img-768w.jpg");
+  background-size: cover;
+}
+
+div.studio-hero {
+  background-image: url(../img/background-golden-yellow.png);
+}
+
+h1.hero-img-text,
+p.hero-img-text {
+  position: absolute;
+  color: var(--tim-neutral-grey);
+  margin-top: 60vh;
+  margin-left: 1em;
+}
+
+h1.hero-img-text {
+  margin-top: 40vh;
+  margin-right: 1em;
+}
+
+p.hero-img-text a {
   color: var(--tim-neutral-grey);
 }
-.main-head a {
-  background-color: transparent;
+
+header {
+  position: fixed;
+  top: 1em;
+  margin: 0 .5em;
+  z-index: 99;
+}
+
+span.scroll {
+  color: var(--tim-golden-yellow)
+}
+
+span.logo {
+  color: var(--tim-neutral-grey);
+}
+
+span.logo:hover {
+  text-decoration: underline wavy;
+}
+
+ /* Overlay background */
+ .overlay {
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: var(--tim-golden-yellow);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 1.6em;
+  line-height: 2em;
+  color: var(--tim-neutral-grey);
+}
+
+.overlay a.active {
+  text-decoration: line-through;
+}
+
+nav.overlay-content a:hover,
+nav.overlay-content a:focus {
+  text-decoration: underline wavy;
+}
+
+.overlay a.active:hover,
+.overlay a.active:focus {
+  text-decoration: line-through;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  left: .5rem;
+  font-size: 2em;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px
+  }
+  .overlay .closebtn {
+    font-size: 2em;
+    top: .2em;
+    right: .2em;
+  }
+} 
+/********************
+  end header and navbar
+********************/
+
+div.project-grid  {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 20px;
+  margin: 1em;
+}
+
+h1,
+article.project,
+a.back-top
+footer {
+  grid-column: 1 / span 1;
 }
 
 h1 {
-  padding-bottom: 1em;
+  margin: 4em 0;
+  line-height: 1.4em;
 }
 
-h2,
-h3 {
-  display: inline;
+h1.project-title {
+  margin-top: 60vh;
+  font-family: neue-machina-bold;
+  font-size: 1em;
+  text-transform: uppercase;
 }
 
-h3 {
-  font-family: plantin, sans-serif;
-  font-weight: 300;
-  font-style: italic;
+h2 {
+  font-size: 1.5em;
+  line-height: 1em;
+  margin-top: 1em;
+  font-family: neue-machina-bold;
+  text-transform: uppercase;
 }
 
-p,
-.content {
+.small-caps {
   margin-bottom: .5em;
-}
-
-header a,
-nav ul li {
-  font-size: 1.2em;
-}
-
-.red {
-  color: var(--tim-passion-red);
-}
-
-a.red:hover,
-a.red:focus {
-  text-decoration: underline;
-}
-
-.page-wrapper {
-  max-width: 960px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  gap: 10px;
-}
-
-ul {
-  display: flex;
-  flex-direction: row;
-}
-
-ul li {
-  margin-right: 1em;
-  border-bottom: 3px transparent solid;
-}
-
-ul li:last-child {
-  margin-right: 0;
-}
-
-.over,
-.contact {
-  grid-column: 1 / span 6;
-  padding: 1em 1.2em;
-  color: var(--tim-neutral-grey);
-  background-color: var(--tim-passion-red);
-}
-
-ul li:hover,
-ul li:focus {
-  font-style: italic;
-  border-bottom: 3px solid #AD4421;
-}
-
-p .link {
-  text-decoration: underline;
-  color: var(--tim-neutral-grey);
-  background-color: transparent;
-}
-
-.profile-pic {
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-  object-fit: cover;
-}
-
-h2.what-we-do {
-  font-size: .8em;
+  font-family: neue-machina-bold;
+  font-size: 1em;
   font-variant: small-caps;
-  margin: 1.2em 0 .5em 0;
 }
 
-article li {
-  list-style-type: none;
+p.paragraph,
+p.info {
+  margin-top: .5em;
+  font-size: 1em;
+  line-height: 1.4em;
+  color: var(--tim-inky-black);
 }
 
-img.project-img {
-  width: 100%;
-  height: 250px;
-  overflow: hidden;
-  object-fit: cover;
+p.paragraph {
+  color: var(--tim-golden-yellow);
 }
 
-img.project-img:hover {
-  opacity: 90%;
+ul.bigger {
+  margin: 1em 0;
+  padding: .5em 1em;
+  background-color: var(--tim-golden-yellow);
+  color: var(--tim-neutral-grey);
+  line-height: 1.4em;
 }
 
-.main-footer {
-  display: flex;
-  justify-content: space-between;
-  font-size: .8em;
-  grid-column: span 6;
+ul.bigger li {
+  margin: 1em 0;
 }
 
-.small-hidden,
-.hidden {
-  display: none;
+article.projects {
+  margin: 3em 0;
 }
 
-/* smallest devices. eg phones*/
-@media (min-width: 300px) {
+picture.full-img {
+  margin: 2em 0;
+}
+
+img.full-img {
+  margin: 2em 0;
+}
+
+picture img.project-img {
+  margin-bottom: 4em;
+}
+
+a.back-top:hover,
+a.back-top:focus {
+  text-decoration: underline wavy;
+}
+
+img.profile-pic {
+  grid-column: 1 / span 1;
+  margin: .5em 0;
+}
+
+figcaption {
+  font-size: .6em;
+}
+
+footer {
+  background-color: var(--tim-golden-yellow);
+  margin-top: 2em;
+  padding: 1em .5em;
+  text-align: center;
+}
+
+footer a {
+  color: var(--tim-neutral-grey);
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.underline:hover,
+.underline:focus {
+  text-decoration-style: underline wavy;
+}
+
+span.small {
+  font-size: .5em;
+  text-transform: uppercase;
+}
+
+/********************
+  pixel art on hover
+********************/
+.wegkapitein-img:hover,
+.wegkapitein-img:focus {
+  cursor: url("../img/pixel-art/TDS-wegkapitein-pixel-art-80x80.svg"), auto;
+}
+
+.jinos-thai-cafe-img:hover,
+.jinos-thai-cafe-img:focus {
+  cursor: url("../img/pixel-art/TDS-jinos-pixel-art-80x80.svg"), auto;
+}
+
+.boiler-maker-img:hover,
+.boiler-maker-img:focus {
+  cursor: url("../img/pixel-art/TDS-boiler-maker-pixel-art-80x80.svg"), auto;
+}
+
+.alley-cats-img:hover,
+.alley-cats-img:focus {
+  cursor: url("../img/pixel-art/TDS-alley-cats-pixel-art-80x80.svg"), auto;
+}
+
+/********************
+  PROJECT HERO IMAGES FOR SMALL SCREENS (max 768px)
+********************/
+div.wegkapitein-hero {
+  background-image: url("../img/768w/wegkapitein/TDS-wegkapitein-img-01.jpg");
+}
+
+div.jinos-thai-cafe-hero {
+  background-image: url("../img/768w/jinos/TDS-jinos-thai-cafe-hero-img.jpg");
+}
+
+div.alley-cats-hero {
+  background-image: url("../img/768w/TDS-alley-cats-main-img-768w.jpg");
+}
+
+div.boiler-maker-hero {
+  background-image: url("../img/768w/TDS-boiler-maker-main-img-768w.jpg");
+}
+
+/********************
+  MEDIA QUERIES
+********************/
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 1.5rem;
+  }
+
+  p.hero-img-text a {
+    margin-left: 1em;
+  }
+
+  .overlay .closebtn {
+    top: -.5em;
+  }
+
+  div.project-grid  {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    margin: 2em;
+  }
+
+  h1,
+  article.project,
+  a.back-top
+  footer {
+    grid-column: 1 / span 4;
+  }
+
+  div.hero-img {
+    height: 75vh;
+    background-image: url("../img/1920w/TDS-wegkapitein-main-img-1920w.jpg");
+    background-size: cover;
+  }
+
+  div.studio-hero {
+    background-image: url(../img/background-golden-yellow.png);
+  }
+
+  h1.hero-img-text,
+  p.hero-img-text {
+    /* font-size: 1.6em; */
+    width: 75%;
+    margin-top: 60vh;
+  }
+
   h1 {
-    font-size: 1.2em;
-    line-height: 1.4em;
-    margin: 1em 0;
-    width: 90%;
+    line-height: 1.6em;
   }
-  .main-head,
-  .main-nav,
-  .intro-text,
-  .content {
-    grid-column: 1 / span 6;
-  }
-  .main-head,
-  .main-nav{
-    border-bottom: 2px solid;
-    padding-bottom: .5em;
-  }
-  .main-head{
-    position: sticky;
-    top: 0;
-    padding-top: .5em;
-    z-index: 3;
-    background: var(--tim-neutral-grey);
-    background-color: rgb(30, 30, 30); /* for dark mode */
-  }
-  .line {
-    position: sticky;
-    top: 4em;
-    z-index: 2;
-    border-bottom: 2px solid;
-    border-color: var(--tim-neutral-grey);
-    grid-column: 1 / span 6;
-  }
-  .small-hidden {
-    grid-column: 1 / span 6;
-  }
-}
 
-/* breakpoint for images */
-@media (min-width: 570px) {
-  .over {
-    display: flex;
-    flex-wrap: wrap;
-    }
-    .profile-pic {
-      display: inline;
-     order: -1;
-     width: 50%;
-     padding-right: 1em;
-     margin-bottom: 1em;
-    }
-    .over p:first-of-type {
-      width: 50%;
-    }
-    img.project-img {
-      height: 300px;
-    }
-}
+  h1.hero-img-text {
+    margin-top: 35vh;
+    margin-left: 2em;
+  }
 
-/* medium and large devices. eg tablets, laptops and desktops */
-@media (min-width: 768px) {
-  .page-wrapper {
-    padding: 0 2em;
+  h1.project-title {
+    margin-top: 60vh;
   }
-  h1 {
-    margin: 0;
-    padding-top: 2em;
-    font-size: 1.6em;
-  }
-  h2.what-we-do {
-    font-size: .6em;
+
+  h2 {
+    margin-top: 1em;
   }
   
-  .main-head,
-  .main-nav{
-  margin-top: 1em;
-  border-bottom: 0;
+  .small-caps {
+    margin-bottom: .5em;
+    font-family: neue-machina-bold;
+    font-size: 1em;
+    font-variant: small-caps;
   }
-  .main-head {
-    grid-column: 1 / span 3;
-    top: 1em;
-    background-color: transparent;
+
+  p.paragraph {
+    padding-bottom: 2em;
   }
-  .main-nav {
-    padding-top: .5em;
-    grid-column: 4 / span 3;
+
+  img.profile-pic {
+    width: 50%;
   }
-  ul {
-    justify-content: flex-end;
+
+  /********************
+    PROJECT HERO IMAGES FOR SMALL SCREENS (768px - 1200 px)
+  ********************/
+  div.wegkapitein-hero {
+    background-image: url("../img/768w/wegkapitein/TDS-wegkapitein-img-01.jpg");
   }
-  .over,
-  .contact {
-  grid-column: 1 / span 6;
-  font-size: 1.2em;
-  line-height: 1.4em;
+
+  div.jinos-thai-cafe-hero {
+    background-image: url("../img/768w/jinos/TDS-jinos-thai-cafe-hero-img.jpg");
   }
- .content {
-    grid-column: span 3;
+
+  div.alley-cats-hero {
+    background-image: url("../img/768w/TDS-alley-cats-main-img-768w.jpg");
   }
-  img.project-img {
-    height: 250px;
-  }
-  .main-footer{
-    grid-column: span 6;
-    margin-top: 2em;
-  }
-  .small-hidden {
-    display: inline;
-  }
-  .hidden {
-    display: inline-block;
+
+  div.boiler-maker-hero {
+    background-image: url("../img/768w/TDS-boiler-maker-main-img-768w.jpg");
   }
 }
 
-/* medium and large devices. eg tablets, laptops and desktops */
-@media (min-width: 960px) {
-  .page-wrapper {
-    padding: 0;
+
+@media screen and (min-width: 1201px) {
+  div.project-grid {
+    margin: 3em;
   }
-}
 
-/* START CSS FOR JAVASCRIPT IN NAV BAR *******************************************************/
-.logo-compact{
-  font-size: 1.2rem;
-  line-height: 25px;
-  transition-duration: .5s;
-}
+  div.hero-img {
+    height: 90vh;
+    background-image: url("../img/1920w/TDS-wegkapitein-main-img-1920w.jpg");
+    background-size: cover;
+  }
 
-.open {
-  transform: translateY(0);
-}
-/* END CSS FOR JAVASCRIPT IN NAV BAR *******************************************************/
+  h1 {
+    width: 75%;
+  }
 
-/* For print */
-@media print {
-  *{
+  h2 {
+    font-size: 1em;
+  }
+
+  p.info {
+    font-size: .8em;
+  }
+
+  p.hero-img-text {
+    margin-top: 70vh;
+  }
+
+  h1.hero-img-text {
+    margin-top: 50vh;
+  }
+  
+  h1.project-title {
+    margin-top: 70vh;
+    /* font-size: 2em; */
+  }
+
+  p.paragraph {
+    width: 75%;
+  }
+
+  picture img.project-img {
+    width: 75%;
+    margin-bottom: 4em;
+  }
+
+  picture.hidden-large {
     display: none;
+  }
+
+  /********************
+    PROJECT HERO IMAGES FOR SMALL SCREENS (min 1201px)
+  ********************/
+  div.wegkapitein-hero {
+    background-image: url("../img/1920w/wegkapitein/TDS-wegkapitein-img-01.jpg");
+  }
+
+  div.jinos-thai-cafe-hero {
+    background-image: url("../img/1920w/jinos/TDS-jinos-thai-cafe-hero-img.jpg");
+  }
+
+  div.alley-cats-hero {
+    background-image: url("../img/1920w/TDS-alley-cats-main-img-1920w.jpg");
+  }
+
+  div.boiler-maker-hero {
+    background-image: url("../img/1920w/TDS-boiler-maker-main-img-1920w.jpg");
   }
 }

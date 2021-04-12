@@ -1,1 +1,25 @@
-@import url("https://use.typekit.net/bxt2nob.css");
+@font-face {
+  font-family: 'neue-machina-regular';
+    src:
+      url(../fonts/neue-machina/NeueMachina-Regular.otf) format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'neue-machina-bold';
+    src:
+      url(../fonts/neue-machina/NeueMachina-Bold.otf) format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+* { 
+  font-family: 'neue-machina-regular', Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+.bold {
+  font-family: 'neue-machina-bold', Helvetica, sans-serif;
+  font-weight: 700;
+}

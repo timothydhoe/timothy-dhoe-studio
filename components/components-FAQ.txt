@@ -1,7 +1,0 @@
-The common folder we can also call it components folder, here we keep all the common HTML files which we will import later into the main pages with JavaScript.
-Example: we can have many pages and all pages have the navbar as a common component, so a navbar.html will have only the navbar code and with the .load() function we can append it to the pages.
-
-$(.nav_container).load(./components/navbar.html);
-
-
-each page will have an empty div with a class or id ‘nav_container’ and with the above code we will load the navbar.html in the div. The benefit of this, let us assume we have 15 pages and if you have to change any link in the navbar so there is no need to go in every page and change, you have to change in only navbar.html page and the work is done.

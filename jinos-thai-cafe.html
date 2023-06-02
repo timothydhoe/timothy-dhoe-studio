@@ -1,180 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timothy D'hoe studio | Branding, Design and Creative studio</title>
-    <meta name="description" content="Timothy D'hoe studio is a creative branding and design studio. By creating purpose, ideas and stories, we develop unique brand experiences.">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timothy D'hoe.studio | Branding and Design studio</title>
+    <meta name="description" content="Connecting and moving people through visual design. By creating purpose, ideas and stories, we develop unique brand experiences.">
     <meta name="author" content="Timothy D'hoe">
-    <meta property="og:title" content="Timothy D'hoe studio | branding and design studio">
+    <meta property="og:title" content="Timothy D'hoe.studio | Jino's Thai café">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://timothydhoe.studio/">
-    <link rel="icon" type="image/svg+xml" href="favicon/TDS-favicon-32x32.svg">
-    <link rel="alternate icon" type="image/png" href="favicon/TDS-favicon-32x32.png">
-    <link rel="apple-touch-icon" href="img/TDS-apple-touch-icon.png">
-    <link rel="stylesheet" href="css/_fonts.css">
-    <link rel="stylesheet" href="css/_base-style.css">
-    <link rel="stylesheet" href="css/main.css">
-    <meta name="keywords" content="Timothy D'hoe studio, branding agency, brand identity, brand experience, brand idea, brand story, brand purpose, brand architecture, brand stratey, brand mission, brand values, brand personality, brand design, visual identity, verbal identity, design language, brand tone of voice, brand naming, digital design, UX design, UI design, spatial design, print design, packaging design, merchandise design, brand guidelines, brand training, brand implementation, creative, graphic design, art direction, typography, print, digital, België, Belgium, Belgique brugge, bruges, Brussel, Brussels">
+    <link rel="icon" type="image/svg+xml" href="./assets/tds-favicon-32x32.svg">
+    <link rel="alternate icon" type="image/png" href="./assets/tds-favicon-32x32.png">
+    <link rel="stylesheet" href="./styles/normalise.css" />
+    <link rel="stylesheet" href="./styles/fonts.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="./scripts/main.js" defer></script>
+    <meta name="keywords" content="Timothy D'hoe studio, branding, design, webdesign, motion graphics, typography, packaging, art direction, digital">
   </head>
-
   <body>
-    <div class="hero-img jinos-thai-cafe-hero">
-      <header>
-        <!-- logo and open nav -->
-        <span onclick="openNav()" class="logo scroll" id="logoColoured">Timothy D'hoe studio</span>
-        <!-- The overlay -->
-        <div id="myNav" class="overlay">
-          <!-- Button to close the overlay navigation -->
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <!-- Overlay content -->
-          <nav class="overlay-content">
-            <a href="index.html" id="navWork">Work</a>
-            <a href="studio.html" id="navStudio">Studio</a>
-            <a href="contact.html" id="navContact">Contact</a>
-            <a href="https://www.instagram.com/timothy.dhoe/" target="_blank" id="navInstagram">@timothydhoe</a>
-          </nav>
+    <!-- Check this link out for the NAV: https://www.youtube.com/watch?v=RxnV9Xcw914 -->
+
+    <!-- Primary header -->
+
+    <header class="primary-header flex">
+      <div class="logo">
+        <a href="./index.html">
+            <p>Timothy<br>D'hoe<span class="page-name page-logos">.Jino's</span></p>
+        </a>
+      </div>
+
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only">Menu</span></button>
+
+        <nav>
+          <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+            <li>
+              <a href="./index.html">Studio</a>
+            </li>
+            <li>
+              <a href="./about.html">About</a>
+            </li>
+            <li>
+              <a href="./logos.html"">Logos</a>
+            </li>
+            <li>
+              <a href="./typefaces.html">Typefaces</a>
+            </li>
+            <li>
+              <a href="mailto:timothy.dhoe@gmail.com">Contact</a>
+            </li>
+          </ul>
+        </nav>
+    </header>
+
+    <main class="main-section">
+      <section class="hero-case-study">
+        <h1>
+          Jino's Thai Café
+        </h1>
+        <hr class="solid">
+      </section>
+
+      <section class="about project-block grid case-grid">
+        <article class="col-case">
+          <h2>A taste of Northern Thailand in Leeds</h2>
+
+          <p>Jino's Thai Cafe, the oldest family-run Thai restaurant in Headingley, takes pride in its rich heritage and owner Malinee's journey from her hometown, Chiang Mai, in Northern Thailand, to Leeds over 18 years ago. While the restaurant holds a cherished place in the vibrant student area of Leeds, it faced mounting competition from a growing number of Thai establishments across England.
+          <span id="dots">...</span><span id="more">
+            <br><br>
+            
+            <span class="case-study-title">The Challenge:<br>Standing out in the competitive Thai dining scene</span><br><br>
+            Upon delving into discussions with the passionate individuals behind Jino's, we discovered their deep-rooted love for the Northern Thai culture and its exquisite cuisine. Our collaborative efforts refined their vision and charted a clearer path for the brand, allowing it to distinguish itself amidst its competitors and redefine the perception of Thai restaurants. Jino's Thai Cafe aimed to move away from the bustling city life of Bangkok and instead embody the essence of Northern Thailand, with its verdant landscapes and tranquil atmosphere. The brand's visual identity needed to eloquently capture this spirit, striking a balance between expressiveness and approachability.
+            <br><br>
+            Rather than stealing the spotlight, the design elements and objects should be elevated and placed at the center of attention, allowing their inherent beauty to shine.
+            <br><br>
+            <span class="case-study-title">What we did:<br>embracing the beauty of Northern Thailand</span><br><br>
+            To encapsulate the essence of Jino's Thai Cafe, we embarked on a creative journey that would authentically showcase the allure of Northern Thailand's cultural heritage and lush greenery. Our design approach aimed to be both expressive and inviting, enticing customers to embark on a sensory journey of flavors and visual delights.
+            <br><br>
+            We developed a visual identity that celebrated the vibrant hues and intricate patterns found in Northern Thai art and craftsmanship. By incorporating these elements into the brand's visual assets, we created a harmonious blend that evoked a sense of warmth and authenticity.
+            <br><br>
+            To ensure the focus remained on the designs and objects themselves, our design choices were intentionally understated, allowing the captivating beauty of Northern Thai culture to take center stage. Each element was thoughtfully crafted to enhance the overall dining experience, subtly guiding guests towards an immersive encounter with the flavors and traditions of Northern Thailand.
+            <br><br>
+            Jino's Thai Cafe's brand identity now resonates with the captivating allure of Northern Thailand, inviting diners on a culinary adventure filled with the lush greenery and rich heritage that defines this remarkable region.
+          </span></p>
+          <button onclick="myFunction()" id="myBtn" class="read-more">Read more</button> 
+        </article>
+
+
+          <img class="col-five rounded" src="./assets/jinos-thai-cafe/TDS-jinos-thai-cafe-hero-img-1.jpg" alt="">
+          <img class="col-three rounded desktop-only" src="./assets/jinos-thai-cafe/TDS-jinos-thai-cafe-hero-img-2.jpg" alt="">
+
+          <blockquote class="col-five">
+          <p>
+            <span class="yellow">Jino's Thai Cafe</span> differentiates itself by celebrating the <span class="yellow tds-italic">lush greenery</span>l you find all over Northern Thailand.
+          </p>
+          </blockquote>
+
+          <img class="case-img col-eight rounded" src="./assets/jinos-thai-cafe/TDS-jinos-img-01.jpg" alt="">
+          <img class="case-img col-four rounded" src="./assets/jinos-thai-cafe/TDS-jinos-img-02.jpg" alt="">
+          <img class="case-img col-four rounded" src="./assets/jinos-thai-cafe/TDS-jinos-img-03.jpg" alt="">
+          <img class="case-img col-eight rounded" src="./assets/jinos-thai-cafe/TDS-jinos-img-04.jpg" alt="">
+          <img class="case-img col-eight rounded" src="./assets/jinos-thai-cafe/TDS-jinos-img-05.jpg" alt="">
+          <blockquote class="col-five">
+          <p>
+             A <span class="yellow">standout bespoke typeface</span> and <span class="yellow tds-italic">freshly made icons</span> help to set Jino's apart.
+          </p>
+          </blockquote>
+          <img class="case-img col-eight rounded" src="./assets/jinos-thai-cafe/TDS-jinos-img-06.jpg" alt="">
+          <img class="case-img col-eight rounded" src="./assets/jinos-thai-cafe/TDS-jinos-img-07.jpg" alt="">
+          <img class="case-img col-eight rounded" src="./assets/jinos-thai-cafe/TDS-jinos-img-08.jpg" alt="">
+          <img class="case-img col-eight rounded" src="./assets/jinos-thai-cafe/TDS-jinos-img-09.jpg" alt="">
+          <!-- <img class="case-img col-eight rounded" src="./assets/jinos-thai-cafe/TDS-jinos-img-10.jpg" alt=""> -->
+          <img class="case-img col-eight rounded" src="./assets/jinos-thai-cafe/TDS-jinos-img-11.jpg" alt="">
+          <img class="case-img col-eight rounded" src="./assets/jinos-thai-cafe/TDS-jinos-img-12.jpg" alt="">
+
+      </section>
+
+
+
+
+
+      
+      <footer class="footer flex">
+        <div class="studio-info">
+          <p>&#9426;&#8201;Timothy D'hoe<span class="tds-italic">.studio</span></p>
+          <p class="small-type footer-top">2023 | BE 0800.558.618</p>
         </div>
-      </header>
-      <h1 class="hero-img-text project-title">
-        Jino's Thai Cafe
-      </h1>
-    </div>
+        <div class="studio-socials align-right">
+          <a class="footer-link" href="">Instagram</a>
+          <a class="footer-link" href="">LinkedIn</a>
+          <p class="small-type creative-fair footer-top">Timothy D'hoe studio supports <a class="footer-link" href="https://creativefairplay.com" target="_blank">Creative Fair Play</a> by Flanders DC and Creative Network</p>
+        </div>
+      </footer>
+    </main>
+
 
     
-    <div class="project-grid">
-      <article class="projects">
-        <h2>The Brief</h2>
-        <p class="paragraph">
-          <span class="underline">Jino's Thai Cafe</span> is Headingley's oldest family-run Thai restaurant. It celebrates the heritage of owner Malinee who moved from her home town Chiang Mai, in Northern Thailand, to Leeds over 18 years ago.
-        <br />
-        <br />
-          The restaurant is a staple in the popular student area of Leeds but it was getting more and more competition from rising Thai businesses popping up all over England.
-        </p>
-    </article>
-
-    <article class="projects">
-      <h2>The Opportunity</h2>
-      <p class="paragraph">
-        During our initial conversation with the people behind Jino's, we quickly uncovered their love for their heritage from Northern Thailand and its delicious food.
-
-        We fine-tuned their vision and created a clearer direction for the brand to differentiate itself from its competitors and set a new goal for Thai restaurants - not all have to be about the busy city life in Bangkok.
-
-        Jino's Thai Cafe differentiates itself by celebrating the lush greenery you find all over Northern Thailand and. Its visual identity needed to match this in an expressive yet friendly way. Instead of stealing the spotlight, it needed to lift and put the designs and objects in the centre of attention.
-      </p>
-    </article>
-    
-    <picture class="full-img">
-      <source media="(max-width: 1200px)" srcset="img/768w/jinos/TDS-jinos-img-01.jpg">
-      <source media="(min-width: 1201px)" srcset="img/1920w/jinos/TDS-jinos-img-01.jpg">
-      <img class="project-img" width="100%" class="jinos-thai-cafe-img" src="img/1920w/jinos/TDS-jinos-img-01.jpg" alt="restaurant branding for Jino's Thai Cafe">
-    </picture>
-
-    <picture class="full-img">
-      <source media="(max-width: 1200px)" srcset="img/768w/jinos/TDS-jinos-img-02.jpg">
-      <source media="(min-width: 1201px)" srcset="img/1920w/jinos/TDS-jinos-img-02.jpg">
-      <img class="project-img" width="100%" class="jinos-thai-cafe-img" src="img/1920w/jinos/TDS-jinos-img-02.jpg" alt="restaurant branding for Jino's Thai Cafe">
-    </picture>
-
-
-
-
-      <article class="projects">
-        <h2>A Unique typeface</h2>
-        <p class="paragraph">
-          The logotype and typeface is built finding inspiration in the Thai language.
-        </p>
-        
-        <p class="paragraph">
-          We created glyphs, inspired from the Thai alphabet, to express diversity in a characteristic and intriguing manner, making each variation peculiar in its own way. The trick was to make sure that everything was still very legible.
-        </p>
-     </article>
-     
-     <picture class="full-img">
-      <source media="(max-width: 1200px)" srcset="img/768w/jinos/TDS-jinos-img-03.jpg">
-      <source media="(min-width: 1201px)" srcset="img/1920w/jinos/TDS-jinos-img-03.jpg">
-      <img class="project-img" width="100%" class="jinos-thai-cafe-img" src="img/1920w/jinos/TDS-jinos-img-03.jpg" alt="restaurant branding for Jino's Thai Cafe">
-    </picture>
-
-    <picture class="full-img">
-      <source media="(max-width: 1200px)" srcset="img/768w/jinos/TDS-jinos-img-04.jpg">
-      <source media="(min-width: 1201px)" srcset="img/1920w/jinos/TDS-jinos-img-04.jpg">
-      <img class="project-img" width="100%" class="jinos-thai-cafe-img" src="img/1920w/jinos/TDS-jinos-img-04.jpg" alt="restaurant branding for Jino's Thai Cafe">
-    </picture>
-
-    <picture class="full-img">
-      <source media="(max-width: 1200px)" srcset="img/768w/jinos/TDS-jinos-img-05.jpg">
-      <source media="(min-width: 1201px)" srcset="img/1920w/jinos/TDS-jinos-img-05.jpg">
-      <img class="project-img" width="100%" class="jinos-thai-cafe-img" src="img/1920w/jinos/TDS-jinos-img-05.jpg" alt="restaurant branding for Jino's Thai Cafe">
-    </picture>
-
-    <picture class="full-img">
-      <source media="(max-width: 1200px)" srcset="img/768w/jinos/TDS-jinos-img-06.jpg">
-      <source media="(min-width: 1201px)" srcset="img/1920w/jinos/TDS-jinos-img-06.jpg">
-      <img class="project-img" width="100%" class="jinos-thai-cafe-img" src="img/1920w/jinos/TDS-jinos-img-06.jpg" alt="restaurant branding for Jino's Thai Cafe">
-    </picture>
-
-    <picture class="full-img">
-      <source media="(max-width: 1200px)" srcset="img/768w/jinos/TDS-jinos-img-07.jpg">
-      <source media="(min-width: 1201px)" srcset="img/1920w/jinos/TDS-jinos-img-07.jpg">
-      <img class="project-img" width="100%" class="jinos-thai-cafe-img" src="img/1920w/jinos/TDS-jinos-img-07.jpg" alt="restaurant branding for Jino's Thai Cafe">
-    </picture>
-
-    <picture class="full-img">
-      <source media="(max-width: 1200px)" srcset="img/768w/jinos/TDS-jinos-img-08.jpg">
-      <source media="(min-width: 1201px)" srcset="img/1920w/jinos/TDS-jinos-img-08.jpg">
-      <img class="project-img" width="100%" class="jinos-thai-cafe-img" src="img/1920w/jinos/TDS-jinos-img-08.jpg" alt="restaurant branding for Jino's Thai Cafe">
-    </picture>
-
-    <picture class="full-img">
-      <source media="(max-width: 1200px)" srcset="img/768w/jinos/TDS-jinos-img-09.jpg">
-      <source media="(min-width: 1201px)" srcset="img/1920w/jinos/TDS-jinos-img-09.jpg">
-      <img class="project-img" width="100%" class="jinos-thai-cafe-img" src="img/1920w/jinos/TDS-jinos-img-09.jpg" alt="restaurant branding for Jino's Thai Cafe">
-    </picture>
-
-    <picture class="full-img">
-      <source media="(max-width: 1200px)" srcset="img/768w/jinos/TDS-jinos-img-10.jpg">
-      <source media="(min-width: 1201px)" srcset="img/1920w/jinos/TDS-jinos-img-10.jpg">
-      <img class="project-img" width="100%" class="jinos-thai-cafe-img" src="img/1920w/jinos/TDS-jinos-img-10.jpg" alt="restaurant branding for Jino's Thai Cafe">
-    </picture>
-
-    <picture class="full-img">
-      <source media="(max-width: 1200px)" srcset="img/768w/jinos/TDS-jinos-img-11.jpg">
-      <source media="(min-width: 1201px)" srcset="img/1920w/jinos/TDS-jinos-img-11.jpg">
-      <img class="project-img" width="100%" class="jinos-thai-cafe-img" src="img/1920w/jinos/TDS-jinos-img-11.jpg" alt="restaurant branding for Jino's Thai Cafe">
-    </picture>
-
-    <picture class="full-img">
-      <source media="(max-width: 1200px)" srcset="img/768w/jinos/TDS-jinos-img-12.jpg">
-      <source media="(min-width: 1201px)" srcset="img/1920w/jinos/TDS-jinos-img-12.jpg">
-      <img class="project-img" width="100%" class="jinos-thai-cafe-img" src="img/1920w/jinos/TDS-jinos-img-12.jpg" alt="restaurant branding for Jino's Thai Cafe">
-    </picture>
-
-    <picture class="full-img hidden-large">
-      <source media="(max-width: 1200px)" srcset="img/768w/jinos/TDS-jinos-img-13.jpg">
-      <img class="project-img" width="100%" class="jinos-thai-cafe-img" src="img/768w/jinos/TDS-jinos-img-13.jpg" alt="restaurant branding for Jino's Thai Cafe">
-    </picture>
-
-    <picture class="full-img hidden-large">
-      <source media="(max-width: 1200px)" srcset="img/768w/jinos/TDS-jinos-img-14.jpg">
-      <img class="project-img" width="100%" class="jinos-thai-cafe-img" src="img/768w/jinos/TDS-jinos-img-14.jpg" alt="restaurant branding for Jino's Thai Cafe">
-    </picture>
-
-      <article class="projects">
-        <p class="paragraph">
-          Give the people at Jino's Thai Cafe a shout <a class="underline" href="https://www.instagram.com/jinosthaicafe/?hl=en" target="_blank">@jinosthaicafe</a>. Or, if you live closeby, support your local business and go have some Thai food.
-        </p>
-      </article>
-  </div>
-
-    <a href="#top" class="back-top">↑ back to top</a>
-
-    <footer>
-      <a href="mailto:timothy.dhoe@gmail.com">timothy.dhoe@studio</a>
-    </footer>
-    
-    <script src="scripts/nav.js"></script>
-
   </body>
 </html>

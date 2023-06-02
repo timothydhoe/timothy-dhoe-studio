@@ -1,180 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timothy D'hoe studio | Branding, Design and Creative studio</title>
-    <meta name="description" content="Timothy D'hoe studio is a creative branding and design studio. By creating purpose, ideas and stories, we develop unique brand experiences.">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timothy D'hoe.studio | Branding and Design studio</title>
+    <meta name="description" content="Connecting and moving people through visual design. By creating purpose, ideas and stories, we develop unique brand experiences.">
     <meta name="author" content="Timothy D'hoe">
-    <meta property="og:title" content="Timothy D'hoe studio | branding and design studio">
+    <meta property="og:title" content="Timothy D'hoe.studio | Alley Cats">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://timothydhoe.studio/">
-    <link rel="icon" type="image/svg+xml" href="favicon/TDS-favicon-32x32.svg">
-    <link rel="alternate icon" type="image/png" href="favicon/TDS-favicon-32x32.png">
-    <link rel="apple-touch-icon" href="img/TDS-apple-touch-icon.png">
-    <link rel="stylesheet" href="css/_fonts.css">
-    <link rel="stylesheet" href="css/_base-style.css">
-    <link rel="stylesheet" href="css/main.css">
-    <meta name="keywords" content="Timothy D'hoe studio, branding agency, brand identity, brand experience, brand idea, brand story, brand purpose, brand architecture, brand stratey, brand mission, brand values, brand personality, brand design, visual identity, verbal identity, design language, brand tone of voice, brand naming, digital design, UX design, UI design, spatial design, print design, packaging design, merchandise design, brand guidelines, brand training, brand implementation, creative, graphic design, art direction, typography, print, digital, België, Belgium, Belgique brugge, bruges, Brussel, Brussels">
+    <link rel="icon" type="image/svg+xml" href="./assets/tds-favicon-32x32.svg">
+    <link rel="alternate icon" type="image/png" href="./assets/tds-favicon-32x32.png">
+    <link rel="stylesheet" href="./styles/normalise.css" />
+    <link rel="stylesheet" href="./styles/fonts.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="./scripts/main.js" defer></script>
+    <meta name="keywords" content="Timothy D'hoe studio, branding, design, webdesign, motion graphics, typography, packaging, art direction, digital">
   </head>
-
   <body>
-    <div class="hero-img alley-cats-hero">
-      <header>
-        <!-- logo and open nav -->
-        <span onclick="openNav()" class="logo scroll" id="logoColoured">Timothy D'hoe studio</span>
-        <!-- The overlay -->
-        <div id="myNav" class="overlay">
-          <!-- Button to close the overlay navigation -->
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <!-- Overlay content -->
-          <nav class="overlay-content">
-            <a href="index.html" id="navWork">Work</a>
-            <a href="studio.html" id="navStudio">Studio</a>
-            <a href="contact.html" id="navContact">Contact</a>
-            <a href="https://www.instagram.com/timothy.dhoe/" target="_blank" id="navInstagram">@timothydhoe</a>
-          </nav>
+    <!-- Check this link out for the NAV: https://www.youtube.com/watch?v=RxnV9Xcw914 -->
+
+    <!-- Primary header -->
+
+    <header class="primary-header flex">
+      <div class="logo">
+        <a href="./index.html">
+            <p>Timothy<br>D'hoe<span class="page-name page-about">.alley cats</span></p>
+        </a>
+      </div>
+
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only">Menu</span></button>
+
+        <nav>
+          <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+            <li>
+              <a href="./index.html">Studio</a>
+            </li>
+            <li>
+              <a href="./about.html">About</a>
+            </li>
+            <li>
+              <a href="./logos.html"">Logos</a>
+            </li>
+            <li>
+              <a href="./typefaces.html">Typefaces</a>
+            </li>
+            <li>
+              <a href="mailto:timothy.dhoe@gmail.com">Contact</a>
+            </li>
+          </ul>
+        </nav>
+    </header>
+
+    <main class="main-section">
+      <section class="hero-case-study">
+        <h1>
+          Alley Cats
+        </h1>
+        <hr class="solid">
+      </section>
+
+      <section class="about project-block grid case-grid">
+        <article class="col-case">
+          <h2>Embracing mystery, unveiling secrets</h2>
+
+          <p>Redefining the burger joint experience in a saturated market. Or, how to stand out with an honest story.
+            But the real magic of Alley Cats lies in its mysterious alleyway location. The more you explore, the more secrets it reveals.
+          <span id="dots">...</span><span id="more">
+            <br><br>
+            
+            <span class="case-study-title">The Challenge:<br>redefining the burger joint experience in a saturated market</span><br><br>
+            In today's bustling burger joint market, every city boasts a myriad of restaurants claiming to serve the "best burgers in town." However, Alley Cats, an establishment nestled within the enigmatic confines of an alleyway, sought to differentiate itself from the crowd. While initially hesitant to break away from their strong American vibes, complete with clichéd decor like the American flag and horse saddles, Alley Cats possessed a hidden magic that lay within its mysterious alleyway location. The more one delved into its depths, the more secrets it unveiled.
+            <br><br>
+            Venturing through the alley, one discovered a realm that grew increasingly familiar with each step, its environment offering hidden treasures to those bold enough to explore. As dusk settled, the alley cast the first shadows, inviting courageous souls to embrace its offerings. Within its unassuming facade, Alley Cats held not only stories to be told but also the potential for shortcuts leading to unexpected destinations. Here, self-consciousness had no place, and seriousness found itself playfully abandoned.
+            <br><br>
+            <span class="case-study-title">What we did:<br>infusing mystery and playfulness into the brand</span><br><br>
+            Understanding the essence of Alley Cats, we embarked on a branding journey that would capture the allure of its hidden world while embodying a sense of excitement and fun. Inspired by the distinctive shapes and heights of each burger, we conceptualized unique icons and labels, subtly paying homage to the diverse ingredients and bun variations that determined their form. The stories we crafted came alive with a modified color palette drawn from the rich symbolism of the American flag.
+            <br><br>
+            To evoke the essence of alleyways, we developed a playful typographic style that mimicked the elongated shadows cast in those hidden corridors. Additionally, we introduced a captivating mascot—an alley cat embodying the spirit of the "great unknown," guardian of the secret alleys and watchful protector of the restaurant.
+            <br><br>
+            While Alley Cats didn't require extensive branding across multiple applications, we ensured that where it was essential, the design stood out prominently and immediately communicated the establishment's mysterious and playful nature.
+          </span></p>
+
+          <button onclick="myFunction()" id="myBtn" class="read-more">Read more</button> 
+        </article>
+
+
+          <img class="col-five rounded" src="./assets/TDS-alley-cats-hero-img-1.jpg" alt="">
+          <img class="col-three rounded desktop-only" src="./assets/TDS-alley-cats-hero-img-2.jpg" alt="">
+
+          <blockquote class="col-five">
+          <p>
+             We needed to reflect an alley's <span class="yellow tds-italic">sense of mystery</span> in a fun way.
+          </p>
+          </blockquote>
+
+          <img class="case-img col-four square rounded" src="./assets/alley-cats/TDS-alley-cats-img-01.gif" alt="">
+          <img class="case-img col-four square rounded" src="./assets/alley-cats/TDS-alley-cats-img-02.gif" alt="">
+          <!-- <img class="case-img col-eight rounded" src="./assets/alley-cats/TDS-alley-cats-img-03.jpg" alt=""> -->
+          <img class="case-img col-eight rounded" src="./assets/alley-cats/TDS-alley-cats-img-04.jpg" alt="">
+          <img class="case-img col-eight rounded" src="./assets/alley-cats/TDS-alley-cats-img-05.jpg" alt="">
+          <img class="case-img col-four rounded" src="./assets/alley-cats/TDS-alley-cats-img-16.jpg" alt="">
+          <img class="case-img col-four rounded" src="./assets/alley-cats/TDS-alley-cats-img-17.jpg" alt="">
+          <img class="case-img col-eight rounded" src="./assets/alley-cats/TDS-alley-cats-img-06.jpg" alt="">
+          <blockquote class="col-four">
+          <p>
+             Alley cats became a burger place that showed their <span class="yellow tds-italic">love of story and food</span>.
+          </p>
+          </blockquote>
+          <img class="case-img col-four rounded" src="./assets/alley-cats/TDS-alley-cats-img-07.gif" alt="">
+          <img class="case-img col-eight rounded" src="./assets/alley-cats/TDS-alley-cats-img-08.jpg" alt="">
+          <img class="case-img col-eight rounded" src="./assets/alley-cats/TDS-alley-cats-img-09.jpg" alt="">
+          <!-- <img class="case-img col-eight rounded" src="./assets/alley-cats/TDS-alley-cats-img-10.jpg" alt=""> --> 
+          <img class="case-img col-eight rounded" src="./assets/alley-cats/TDS-alley-cats-img-11.jpg" alt="">
+          <img class="case-img col-four rounded" src="./assets/alley-cats/TDS-alley-cats-img-12.jpg" alt="">
+          <img class="case-img col-four rounded" src="./assets/alley-cats/TDS-alley-cats-img-13.jpg" alt="">
+          <img class="case-img col-eight rounded" src="./assets/alley-cats/TDS-alley-cats-img-14.jpg" alt="">
+          <img class="case-img col-eight rounded" src="./assets/alley-cats/TDS-alley-cats-img-15.jpg" alt="">
+      </section>
+     
+      <footer class="footer flex">
+        <div class="studio-info">
+          <p>&#9426;&#8201;Timothy D'hoe<span class="tds-italic">.studio</span></p>
+          <p class="small-type footer-top">2023 | BE 0800.558.618</p>
         </div>
-      </header>
-      <h1 class="hero-img-text project-title">
-        Alley Cats
-      </h1>
-    </div>
+        <div class="studio-socials align-right">
+          <a class="footer-link" href="">Instagram</a>
+          <a class="footer-link" href="">LinkedIn</a>
+          <p class="small-type creative-fair footer-top">Timothy D'hoe studio supports <a class="footer-link" href="https://creativefairplay.com" target="_blank">Creative Fair Play</a> by Flanders DC and Creative Network</p>
+        </div>
+      </footer>
+    </main>
 
-    <div class="project-grid">
-      <article class="projects">
-        <h2>The Brief</h2>
-        <p class="paragraph">
-          Today, the burger joint market is at saturation point. In every city, there are at least four restaurants that prepare the "best burgers in town".
-          Though originally, Alley Cats did not want to break with their strong american vibes using objects like the american flag, horse saddles and other clichés that surpass your wildest nightmares.
-        <br />
-        <br />
-          We convinced them that it is better to stand out and to stay true to their brand story and values.
-          After all, what is more American than an alley? Well, a <span class="underline">bloody delicious burger</span> maybe.
-        </p>
-      </article>
 
-      <article class="projects">
-        <h2>The Opportunity</h2>
-        <p class="paragraph">
-          The alley offers more of its secrets the more you walk through it and you get familiar with its environment. It's also the first place in the city where it gets dark when the sun goes down. The alley is often avoided but for those who dare, it offers opportunity, it has stories to tell and, more than not, it offers you a shortcut to your destination. They aren’t places to be self-conscious or to be taken seriously. The Alley Cat brand needed to reflect this sense of mystery in a fun approach.
-
-          We noticed that each burger had its particular shape and height. It inspired us to design different icons and labels as a subtle nod to the changing of the ingredients in the burgers and the bun used that determines its shape.
-        <br />
-        <br />
-          The stories we created are accompanied with a modified colour palette that originated from the American flag. The playful type can be used in different shapes, reminiscent of long shadows that are cast in alley ways.
-          We also designed an alley cat mascot, a representative of the “great unknown that all the secret alleys have to share”, to watch over the restaurant.
-          <br />
-          <br />
-          The Alley Cats team didn’t have much use for elaborate branding across multiple applications, but where it was required, it needed to stand out and immediately communicate their mysterious and playful nature.
-        </p>
-      </article>
-
-      <picture class="full-img">
-        <source media="(max-width: 1200px)" srcset="img/768w/alley-cats/TDS-alley-cats-img-01.jpg">
-        <source media="(min-width: 1201px)" srcset="img/1920w/alley-cats/TDS-alley-cats-img-01.jpg">
-        <img class="project-img" width="100%" class="alley-cats-img" src="img/1920w/alley-cats/TDS-alley-cats-img-01.jpg" alt="restaurant branding for Alley Cats">
-      </picture>
-
-      <picture class="full-img">
-        <source media="(max-width: 1200px)" srcset="img/768w/alley-cats/TDS-alley-cats-img-02.jpg">
-        <source media="(min-width: 1201px)" srcset="img/1920w/alley-cats/TDS-alley-cats-img-02.jpg">
-        <img class="project-img" width="100%" class="alley-cats-img" src="img/1920w/alley-cats/TDS-alley-cats-img-02.jpg" alt="restaurant branding for Alley Cats">
-      </picture>
-
-      <picture class="full-img">
-        <source media="(max-width: 1200px)" srcset="img/768w/alley-cats/TDS-alley-cats-img-03.jpg">
-        <source media="(min-width: 1201px)" srcset="img/1920w/alley-cats/TDS-alley-cats-img-03.jpg">
-        <img class="project-img" width="100%" class="alley-cats-img" src="img/1920w/alley-cats/TDS-alley-cats-img-03.jpg" alt="restaurant branding for Alley Cats">
-      </picture>
-
-      <picture class="full-img">
-        <source media="(max-width: 1200px)" srcset="img/768w/alley-cats/TDS-alley-cats-img-04.jpg">
-        <source media="(min-width: 1201px)" srcset="img/1920w/alley-cats/TDS-alley-cats-img-04.jpg">
-        <img class="project-img" width="100%" class="alley-cats-img" src="img/1920w/alley-cats/TDS-alley-cats-img-04.jpg" alt="restaurant branding for Alley Cats">
-      </picture>
-
-      <picture class="full-img">
-        <source media="(max-width: 1200px)" srcset="img/768w/alley-cats/TDS-alley-cats-img-05.jpg">
-        <source media="(min-width: 1201px)" srcset="img/1920w/alley-cats/TDS-alley-cats-img-05.jpg">
-        <img class="project-img" width="100%" class="alley-cats-img" src="img/1920w/alley-cats/TDS-alley-cats-img-05.jpg" alt="restaurant branding for Alley Cats">
-      </picture>
-
-      <picture class="full-img">
-        <source media="(max-width: 1200px)" srcset="img/768w/alley-cats/TDS-alley-cats-img-06.jpg">
-        <source media="(min-width: 1201px)" srcset="img/1920w/alley-cats/TDS-alley-cats-img-06.jpg">
-        <img class="project-img" width="100%" class="alley-cats-img" src="img/1920w/alley-cats/TDS-alley-cats-img-06.jpg" alt="restaurant branding for Alley Cats">
-      </picture>
-
-      <picture class="full-img">
-        <source media="(max-width: 1200px)" srcset="img/768w/alley-cats/TDS-alley-cats-img-07.jpg">
-        <source media="(min-width: 1201px)" srcset="img/1920w/alley-cats/TDS-alley-cats-img-07.jpg">
-        <img class="project-img" width="100%" class="alley-cats-img" src="img/1920w/alley-cats/TDS-alley-cats-img-07.jpg" alt="restaurant branding for Alley Cats">
-      </picture>
-
-      <picture class="full-img">
-        <source media="(max-width: 1200px)" srcset="img/768w/alley-cats/TDS-alley-cats-img-08.jpg">
-        <source media="(min-width: 1201px)" srcset="img/1920w/alley-cats/TDS-alley-cats-img-08.jpg">
-        <img class="project-img" width="100%" class="alley-cats-img" src="img/1920w/alley-cats/TDS-alley-cats-img-08.jpg" alt="restaurant branding for Alley Cats">
-      </picture>
-
-      <picture class="full-img">
-        <source media="(max-width: 1200px)" srcset="img/768w/alley-cats/TDS-alley-cats-img-09.jpg">
-        <source media="(min-width: 1201px)" srcset="img/1920w/alley-cats/TDS-alley-cats-img-09.jpg">
-        <img class="project-img" width="100%" class="alley-cats-img" src="img/1920w/alley-cats/TDS-alley-cats-img-09.jpg" alt="restaurant branding for Alley Cats">
-      </picture>
-
-      <picture class="full-img">
-        <source media="(max-width: 1200px)" srcset="img/768w/alley-cats/TDS-alley-cats-img-10.jpg">
-        <source media="(min-width: 1201px)" srcset="img/1920w/alley-cats/TDS-alley-cats-img-10.jpg">
-        <img class="project-img" width="100%" class="alley-cats-img" src="img/1920w/alley-cats/TDS-alley-cats-img-10.jpg" alt="restaurant branding for Alley Cats">
-      </picture>
-
-      <picture class="full-img">
-        <source media="(max-width: 1200px)" srcset="img/768w/alley-cats/TDS-alley-cats-img-11.jpg">
-        <source media="(min-width: 1201px)" srcset="img/1920w/alley-cats/TDS-alley-cats-img-11.jpg">
-        <img class="project-img" width="100%" class="alley-cats-img" src="img/1920w/alley-cats/TDS-alley-cats-img-11.jpg" alt="restaurant branding for Alley Cats">
-      </picture>
-
-      <picture class="full-img">
-        <source media="(max-width: 1200px)" srcset="img/768w/alley-cats/TDS-alley-cats-img-12.jpg">
-        <source media="(min-width: 1201px)" srcset="img/1920w/alley-cats/TDS-alley-cats-img-12.jpg">
-        <img class="project-img" width="100%" class="alley-cats-img" src="img/1920w/alley-cats/TDS-alley-cats-img-12.jpg" alt="restaurant branding for Alley Cats">
-      </picture>
-
-      <picture class="full-img">
-        <source media="(max-width: 1200px)" srcset="img/768w/alley-cats/TDS-alley-cats-img-13.jpg">
-        <source media="(min-width: 1201px)" srcset="img/1920w/alley-cats/TDS-alley-cats-img-13.jpg">
-        <img class="project-img" width="100%" class="alley-cats-img" src="img/1920w/alley-cats/TDS-alley-cats-img-13.jpg" alt="restaurant branding for Alley Cats">
-      </picture>
-
-      <picture class="full-img">
-        <source media="(max-width: 1200px)" srcset="img/768w/alley-cats/TDS-alley-cats-img-14.jpg">
-        <source media="(min-width: 1201px)" srcset="img/1920w/alley-cats/TDS-alley-cats-img-14.jpg">
-        <img class="project-img" width="100%" class="alley-cats-img" src="img/1920w/alley-cats/TDS-alley-cats-img-14.jpg" alt="restaurant branding for Alley Cats">
-      </picture>
-
-      <picture class="full-img">
-        <source media="(max-width: 1200px)" srcset="img/768w/alley-cats/TDS-alley-cats-img-15.jpg">
-        <source media="(min-width: 1201px)" srcset="img/1920w/alley-cats/TDS-alley-cats-img-15.jpg">
-        <img class="project-img" width="100%" class="alley-cats-img" src="img/1920w/alley-cats/TDS-alley-cats-img-15.jpg" alt="restaurant branding for Alley Cats">
-      </picture>
-
-      <picture class="full-img hidden-large">
-        <source media="(max-width: 1200px)" srcset="img/768w/alley-cats/TDS-alley-cats-img-16.jpg">
-        <img class="project-img" width="100%" class="alley-cats-img" src="img/768w/alley-cats/TDS-alley-cats-img-16.jpg" alt="dancing branding for Alley Cats">
-      </picture>
-
-    </div>
-
-    <a href="#top" class="back-top underline">↑ back to top</a>
-
-    <footer>
-      <a href="mailto:timothy.dhoe@gmail.com">Get in touch: timothy.dhoe@studio</a>
-    </footer>
     
-    <script src="scripts/nav.js"></script>
-
   </body>
 </html>

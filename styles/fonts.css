@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "tds-sans-regular";
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/GT-America-Standard-Regular-Trial.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "tds-italic";
+  font-stretch: normal;
+  font-style: italic;
+  font-weight: 400;
+  src: url(../fonts/GT-Alpina-Standard-Regular-Italic-Trial.woff2)
+    format("woff2");
+}
+
+/*  */
+@font-face {
+  font-family: "pitch-sans-medium";
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/PitchSans-Medium.woff2) format("woff2");
+}
+
+/*  */
+@font-face {
+  font-family: "pitch-sans-medium-italic";
+  font-stretch: normal;
+  font-style: italic;
+  font-weight: 500;
+  src: url(../fonts/PitchSans-MediumItalic.woff2) format("woff2");
+}
+
+/*  */
+@font-face {
+  font-family: "pitch-regular";
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Pitch-Regular.woff2) format("woff2");
+}
+
+/*  */
+@font-face {
+  font-family: "pitch-medium";
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/Pitch-Medium.woff2) format("woff2");
+}
+
+/*  */
+@font-face {
+  font-family: "pitch-medium-italic";
+  font-stretch: normal;
+  font-style: italic;
+  font-weight: 500;
+  src: url(../fonts/Pitch-MediumItalic.woff2) format("woff2");
+}
+
+/*  */
+@font-face {
+  font-family: "calibre-regular";
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Calibre-Regular.woff2) format("woff2");
+}

@@ -315,9 +315,14 @@ blockquote {
 
 .primary-navigation li.active {
   opacity: 0.5;
+  font-family: "tds-italic";
+  font-style: italic;
+
+  color: transparent;
+  text-shadow: 0 0 6px #2a1244;
 }
 
-/* Underline hover animation */
+/* Nav items hover animation */
 .primary-navigation li a {
   display: inline-block;
   position: relative;
